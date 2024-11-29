@@ -7,7 +7,7 @@
    <title>user page</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/header.css">
+   <link rel="stylesheet" href="css/header_user.css">
 
        <!-- ICONS -->
        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -39,9 +39,11 @@
             </div>
         <div class="toggle"><i class='bx bx-menu'></i></div>
         <ul class="menu">
-            <li><a href="services.php">Services</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="about.php">About</a></li>
-            <li><a href="accounts.php">Accounts</a></li>
+            <li><a href="programs.html">Recipes</a></li>
+            <li><a href="" target="_blank">Contacts</a></li>
+            <li><a href="contact.html">Accounts</a></li>
         </ul>
     </nav>
 

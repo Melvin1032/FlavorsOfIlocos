@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
       }elseif($row['user_type'] == 'user'){
 
          $_SESSION['user_name'] = $row['username'];
-         header('location:index.php');
+         header('location:home.php');
 
       }
      
@@ -47,7 +47,7 @@ if(isset($_POST['submit'])){
    <title>login form</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/styles.css">
 
 </head>
 <body>
