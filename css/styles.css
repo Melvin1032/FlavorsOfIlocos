@@ -131,17 +131,22 @@ body {
  .form-container form p a{
     color:crimson;
  }
- 
- .form-container form .error-msg{
-    margin:10px 0;
-    display: block;
-    background: crimson;
-    color:#fff;
-    border-radius: 5px;
-    font-size: 20px;
-    padding:10px;
- }
- 
+
+ /* Error Message Styling */
+.error-msg {
+   color: #ff4d4d; /* Red color for error */
+   background-color: #ffe5e5; /* Light red background for better visibility */
+   border: 1px solid #ff4d4d; /* Border matches the text color */
+   border-radius: 5px; /* Rounded corners */
+   padding: 10px;
+   font-size: 0.95em;
+   font-weight: bold;
+   text-align: center;
+   margin: 10px 0;
+   display: block;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 
  main {
    padding: 40px 20px;
@@ -311,8 +316,191 @@ body {
 
 
 
+/* LOGIN STYLE */
+
+.flex-container-login {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   margin-top: 2rem;
+   margin-bottom: 10rem;
+}
+
+.flex-container-login > div {
+   width: 50rem;
+   height: 55rem;
+   margin: 10px;
+   /* background-color: #f1f1f1; */
+   padding: 20px;
+}
 
 
+.login-container {
+   max-width: 500px;
+   padding: 20px;
+   text-align: center;
+}
 
+.login-container h1 {
+   font-size: 50px;
+   color: #000000; /* Dark green */
+   margin-bottom: 5px;
+   font-weight: bold;
+   font-family: "Fira Sans", sans-serif;
+   font-style: normal;
+}
 
- 
+.login-container p {
+   color: #333;
+   margin-bottom: 20px;
+   font-size: 15px;
+}
+
+/* Form Fields */
+form label {
+   display: block;
+   text-align: left;
+   margin: 10px 0 5px;
+   color: #333;
+}
+
+form input[type="username"],
+form input[type="email"],
+form input[type="full_name"],
+form input[type="contact"],
+form input[type="password"],
+form input[type="cpassword"] {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1em;
+}
+.password-wrapper {
+   position: relative;
+}
+
+.password-wrapper input {
+   width: calc(100% - 40px);
+   display: inline-block;
+}
+
+.password-wrapper i {
+   position: absolute;
+   right: 10px;
+   top: 50%;
+   transform: translateY(-50%);
+   cursor: pointer;
+}
+
+.forgot-password {
+   display: block;
+   text-align: right;
+   color: #113412;
+   text-decoration: none;
+   font-size: 0.9em;
+   margin-bottom: 20px;
+}
+
+.forgot-password:hover {
+   text-decoration: underline;
+}
+
+/* Remember Me */
+.remember-me {
+   text-align: left;
+   margin-bottom: 20px;
+}
+
+.remember-me input {
+   margin-right: 5px;
+}
+
+/* Buttons */
+.login-btn {
+   width: 100%;
+   padding: 10px;
+   background-color: rgb(145, 111, 78);
+   color: white;
+   border: none;
+   border-radius: 5px;
+   font-size: 1.1em;
+   cursor: pointer;
+}
+
+.login-btn:hover {
+   background-color:rgb(196, 164, 132);
+}
+
+/* Social Login */
+.social-login {
+   margin-top: 20px;
+}
+
+.social-login p {
+   margin: 10px 0;
+   color: #555;
+}
+
+.social-icons {
+   display: flex;
+   justify-content: space-between;
+}
+
+.social-icons button {
+   width: 48%;
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   font-size: 1em;
+   cursor: pointer;
+}
+
+.social-icons .google {
+   background-color: #fff;
+   color: #333;
+   border: 1px solid #ccc;
+}
+
+.social-icons .facebook {
+   background-color: #4267B2;
+   color: white;
+}
+
+.social-icons .google:hover {
+   background-color: #f0f0f0;
+}
+
+.social-icons .facebook:hover {
+   background-color: #365899;
+}
+
+/* Profile Picture Section */
+.profile_pic {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   font-family: Arial, sans-serif;
+}
+
+.profile_pic label {
+   font-size: 16px;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 8px;
+}
+
+.profile_pic input[type="file"] {
+   font-size: 16px;
+   padding: 8px;
+   background-color: #f7f7f7;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   width: 100%;
+   box-sizing: border-box;
+   cursor: pointer;
+   transition: border 0.3s ease, background-color 0.3s ease;
+}

@@ -5,7 +5,7 @@
 session_start();
 
 if(!isset($_SESSION['user_name'])){
-   header('location:login_form.php');
+   header('location:login.php');
 }
 
 ?>
@@ -35,29 +35,22 @@ if(!isset($_SESSION['user_name'])){
 <?php include 'header_user.php'; ?>
 
 
-<div class="home-container1">
-    <div class="bg-img">
-    <img src="images/BG1.jpg" alt="">
-    </div>
+<div class="main-container">
+  <video autoplay loop muted>
 
-    <div class="FClogo">
-        <img src="logo/Logo4.png" alt="">
-    </div>
+  <source src="videos/webbg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <h1>Welcome To</h1>
+  <h2>FLAVORS OF ILOCOS!</h2>
+  <p>Flavors of Ilocos is an online recipe platform dedicated to highlighting <br>
+  the rich culinary traditions of Ilocano cuisine. It offers easy-to-follow <br>
+  recipes and cultural insights, making it simple to recreate authentic Ilocano <br>
+  flavors at home.</p>
 </div>
 
-
-<div class="container">
-
-   <div class="content">
-      <h3>hi, <span>user</span></h3>
-      <h1>welcome <span><?php echo $_SESSION['user_name'] ?></span></h1>
-      <p>this is an user page</p>
-      <a href="login_form.php" class="btn">login</a>
-      <a href="register_form.php" class="btn">register</a>
-      <a href="logout.php" class="btn">logout</a>
-   </div>
-
-</div>
-
+<?php include 'footer.php'; ?>
 </body>
 </html>
+
+</div>

@@ -1,5 +1,14 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "flavors_of_ilocos";
 
-$conn = mysqli_connect('localhost','root','','flavors_of_ilocos');
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 
-?>
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+// echo "Connected successfully";

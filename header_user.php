@@ -35,15 +35,13 @@
 
     <nav>
             <div class="logo">
-               <a href="index.php"> <img src="logo/Logo5.png" alt="Logo"> </a>
+               <a href="home.php"> <img src="logo/Logo5.png" alt="Logo"> </a>
             </div>
         <div class="toggle"><i class='bx bx-menu'></i></div>
         <ul class="menu">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="programs.html">Recipes</a></li>
-            <li><a href="" target="_blank">Contacts</a></li>
-            <li><a href="contact.html">Accounts</a></li>
+            <li><a href="home.php">Home</a></li>
+            <li><a href="recipes.php">Recipes</a></li>
+            <li><a href="accounts.php">Accounts</a></li>
         </ul>
     </nav>
 
