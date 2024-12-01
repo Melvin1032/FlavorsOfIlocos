@@ -2,8 +2,8 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "flavors_of_ilocos";
-
+$dbname = "food_recipe_db";
+  
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
 

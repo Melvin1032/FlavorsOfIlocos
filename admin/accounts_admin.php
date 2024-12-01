@@ -1,16 +1,18 @@
 <?php
-@include 'config.php';
-session_start();
 
-if (!isset($_SESSION['user_name'])) {
+session_start();
+include('../config.php');
+
+
+if (!isset($_SESSION['admin_name'])) {
     header('location:login.php');
     exit(); 
 }
 
 // Fetch user details from the database
-$user_name = $_SESSION['user_name'];  // Assuming the session stores the username
+$admin_name = $_SESSION['admin_name'];  // Assuming the session stores the username
 
-$sql = "SELECT * FROM user_form WHERE username = '$user_name'";  // Adjust column names if needed
+$sql = "SELECT * FROM user_form WHERE username = '$admin_name'";  // Adjust column names if needed
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
@@ -50,18 +52,18 @@ if (mysqli_num_rows($result) > 0) {
 </head>
 <body>
 
-<?php include 'header_user.php'; ?>
+<?php include 'header_admin.php'; ?>
 
 
 <section class="w-full overflow-hidden dark:bg-gray-900">
     <div class="w-full mx-auto">
         <!-- User Cover IMAGE -->
-        <img src="images/food.jpg"
+        <img src="/Flavors of Ilocos/images/food.jpg"
                 class="w-full xl:h-[20rem] lg:h-[22rem] md:h-[16rem] sm:h-[13rem] xs:h-[9.5rem]" />
 
         <!-- User Profile Image -->
         <div class="w-full mx-auto flex justify-center">
-            <img src="images/user.png" alt="User Profile"
+            <img src="/Flavors of Ilocos/images/user.png" alt="User Profile"
                     class="rounded-full object-cover xl:w-[10rem] xl:h-[10rem] lg:w-[16rem] lg:h-[16rem] md:w-[12rem] md:h-[12rem] sm:w-[10rem] sm:h-[10rem] xs:w-[8rem] xs:h-[8rem] outline outline-2 outline-offset-2 outline-white-500 shadow-xl relative xl:bottom-[7rem] lg:bottom-[8rem] md:bottom-[6rem] sm:bottom-[5rem] xs:bottom-[4.3rem]" />
         </div>
 
@@ -70,7 +72,7 @@ if (mysqli_num_rows($result) > 0) {
             <!-- FullName -->
             <div class="flex items-center space-x-2 bg-gray-100 rounded-lg shadow-md p-5">
        <div class="text-3xl font-semibold text-gray-600">
-        Welcome, <span class="text-gray-900"><?php echo $_SESSION['user_name'] ?></span>!
+        Welcome Admin, <span class="text-gray-900"><?php echo $_SESSION['admin_name'] ?></span>!
        </div>
    </div>
 
@@ -82,7 +84,7 @@ Join us in celebrating the rich heritage of Ilocos and elevate your cooking with
                 praesentium?</p>
 
                 <br>
-                <a href="logout.php" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-20 rounded shadow-md transition duration-200">Logout</a>
+                <a href="/Flavors of Ilocos/logout.php" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-20 rounded shadow-md transition duration-200">Logout</a>
 
 
         </div>

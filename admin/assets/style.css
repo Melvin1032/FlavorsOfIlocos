@@ -1,0 +1,84 @@
+
+
+.main {
+    height: auto;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 45vh;
+    width: 100%;
+    
+}
+
+.caption {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 70%;
+    margin-left: 300px;
+}
+
+
+.caption-p {
+    font-size: 25px;
+}
+
+.carousel-caption {
+    margin-top: -40px;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#category, #food {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-food-list {
+    width: 80%;
+    height: 800px;
+    border-radius: 20px;
+    border: none;
+    padding: 20px;
+}
+
+.btn-add-food {
+    width: 150px !important;
+    padding: 10px;
+    font-size: 15px;
+}
+
+    #foodListTable thead {
+        background-color: #343a40;
+        color: #fff;
+    }
+    #foodListTable tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+    #foodListTable tbody tr:hover {
+        background-color: #e9ecef;
+        transform: scale(1.02);
+        transition: all 0.3s ease;
+    }
+    .table {
+        font-size: 1.1rem;
+        border-collapse: separate;
+        border-spacing: 0;
+    }
+    .table th, .table td {
+        padding: 15px;
+    }
+
