@@ -26,80 +26,14 @@ if (!isset($_SESSION['user_name'])) {
 <?php include 'header_user.php'; ?>
 
 
-    <section id="category">
-
-    
-
-        <!-- Category Area -->
-        <div class="container mt-5">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/breakfast.jpg" class="card-img-top" alt="..." style="height: 240px">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Breakfast Recipes</strong></h5>
-                            <a class="btn btn-dark btn-block" data-toggle="modal" data-target="#breakfastModal">View List</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/lunch.jpg" class="card-img-top" alt="..." style="height: 240px">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Lunch Recipes</strong></h5>
-                            <a class="btn btn-dark btn-block" data-toggle="modal" data-target="#lunchModal">View List</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/dinner.jpg" class="card-img-top" alt="..." style="height: 240px">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Dinner Recipes</strong></h5>
-                            <a class="btn btn-dark btn-block" data-toggle="modal" data-target="#dinnerModal">View List</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/appetizer.jpg" class="card-img-top" alt="..." style="height: 240px">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Appetizer Recipes</strong></h5>
-                            <a class="btn btn-dark btn-block" data-toggle="modal" data-target="#appetizerModal">View List</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/dessert.jpeg" class="card-img-top" alt="..." style="height: 240px">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Dessert Recipes</strong></h5>
-                            <a class="btn btn-dark btn-block" data-toggle="modal" data-target="#dessertModal">View List</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="image/fastfood.jpg" class="card-img-top" alt="..." style="height: 240px">
-                        <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Fast Food Recipes</strong></h5>
-                            <a class="btn btn-dark btn-block" data-toggle="modal" data-target="#fastFoodModal">View List</a>
-                        </div>
-                    </div>
-                </div>
-            </div>   
-        </div>
-        
-    </section>
-
     <section id="food">
     <div class="card card-food-list">
-        <h1 class="text-center mb-4"><strong>Ilocano Dishes That Define Northern Philippine Cuisine</strong></h1>
+    <h1 class="text-center mb-4"><strong>Ilocano Dishes That Define Northern Philippine Cuisine</strong></h1>
+<p class="text-center mb-5" style="font-size: 1.2rem; color: #555; line-height: 1.8;">
+  Explore the authentic flavors of Ilocano cuisine, where every dish is a celebration of tradition, culture, and love for local ingredients. 
+  From the crispy delight of <strong>Bagnet</strong> to the hearty flavors of <strong>Pinakbet</strong>, dive into recipes that bring the true essence of Ilocos to your table.
+</p>
+
         
         <!-- Search Section -->
         <div class="mt-4">
@@ -174,13 +108,7 @@ if (!isset($_SESSION['user_name'])) {
     </div>
 </section>
 
-<!-- Add some custom CSS for styling -->
 
-</style>
-
-
-
-    
     
     <script src="assets/script.js"></script>
   

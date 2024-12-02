@@ -25,7 +25,7 @@ if ($_FILES['recipe_image']['tmp_name'] != "") {
 // Redirect back to the main page after update
 echo "<script>
     alert('Updated Successfully'); 
-    window.location.href = 'http://localhost/Flavors of Ilocos/recipes_admin.php#food';
+    window.location.href = 'http://localhost/Flavors of Ilocos/admin/recipes_admin.php#food';
     </script>";
 exit();
 ?>

@@ -5,7 +5,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="lg:flex lg:items-center">
           <a href="javascript:void(0)">
-            <img src="https://readymadeui.com/readymadeui-light.svg" alt="logo" class="w-52" />
+            <img src="/Flavors of Ilocos/logo/logo5.png" alt="logo" class="w-82" />
           </a>
         </div>
 
@@ -72,6 +72,6 @@
         </div>
       </div>
 
-      <p class='text-gray-300 text-sm mt-10'>© ReadymadeUI. All rights reserved.
+      <p class='text-gray-300 text-sm mt-10'>© Flavors of Ilocos. All rights reserved.
       </p>
     </footer>

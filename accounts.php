@@ -49,69 +49,73 @@ if (mysqli_num_rows($result) > 0) {
 
 </head>
 <body>
-
 <?php include 'header_user.php'; ?>
 
-
-<section class="w-full overflow-hidden dark:bg-gray-900">
-    <div class="w-full mx-auto">
-        <!-- User Cover IMAGE -->
-        <img src="images/food.jpg"
-                class="w-full xl:h-[20rem] lg:h-[22rem] md:h-[16rem] sm:h-[13rem] xs:h-[9.5rem]" />
-
+<section class="bg-gray-10 text-white">
+    <!-- User Cover IMAGE -->
+    <div class="relative w-full">
+        <img src="/Flavors of Ilocos/images/food.jpg" alt="Cover Image" class="w-full h-[20rem] object-cover rounded-b-lg" />
+        
         <!-- User Profile Image -->
-        <div class="w-full mx-auto flex justify-center">
-            <img src="images/user.png" alt="User Profile"
-                    class="rounded-full object-cover xl:w-[10rem] xl:h-[10rem] lg:w-[16rem] lg:h-[16rem] md:w-[12rem] md:h-[12rem] sm:w-[10rem] sm:h-[10rem] xs:w-[8rem] xs:h-[8rem] outline outline-2 outline-offset-2 outline-white-500 shadow-xl relative xl:bottom-[7rem] lg:bottom-[8rem] md:bottom-[6rem] sm:bottom-[5rem] xs:bottom-[4.3rem]" />
-        </div>
-
-        <div
-            class="xl:w-[80%] lg:w-[90%] md:w-[94%] sm:w-[96%] xs:w-[92%] mx-auto flex flex-col gap-4 justify-center items-center relative xl:-top-[6rem] lg:-top-[6rem] md:-top-[4rem] sm:-top-[3rem] xs:-top-[2.2rem]">
-            <!-- FullName -->
-            <div class="flex items-center space-x-2 bg-gray-100 rounded-lg shadow-md p-5">
-       <div class="text-3xl font-semibold text-gray-600">
-        Welcome, <span class="text-gray-900"><?php echo $_SESSION['user_name'] ?></span>!
-       </div>
-   </div>
-
-            <!-- About -->
-            <p class="w-full text-gray-700 dark:text-gray-400 text-lg text-pretty sm:text-center xs:text-justify">Discover the vibrant flavors and culinary traditions of Ilocos with our website dedicated to showcasing the unique and delectable dishes of the region. 
-Whether you're a seasoned cook or just beginning your culinary journey, you'll find authentic recipes and inspiring ideas to bring the tastes of Ilocano cuisine into your own kitchen. 
-Join us in celebrating the rich heritage of Ilocos and elevate your cooking with these incredible, flavorful dishes!
-
-                praesentium?</p>
-
-                <br>
-                <a href="logout.php" class="bg-red-500 hover:bg-red-600 text-white font-semibold py-3 px-20 rounded shadow-md transition duration-200">Logout</a>
-
-
+        <div class="absolute bottom-[-6rem] left-1/2 transform -translate-x-1/2">
+            <img src="/Flavors of Ilocos/images/user.png" alt="User Profile" 
+                class="w-[12rem] h-[12rem] rounded-full border-4 border-white shadow-xl object-cover" />
         </div>
     </div>
 
-</section>
-<h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">User Account Information</h2>
-<section class="py-8 px-6 flex justify-center">
+    <div class="max-w-screen-lg mx-auto px-4 pb-8 pt-32 text-center">
+        <!-- Welcome Message -->
+        <div class="bg-gray-200 rounded-lg py-4 px-6 shadow-md">
+            <h1 class="text-2xl font-semibold text-gray-900 mb-4">Welcome, <span class="text-gray-900"><?php echo $_SESSION['user_name']; ?></span>!</h1>
+        </div>
 
-    <div class="space-y-5">
-        <div class="flex items-center">
-            <label class="w-40 text-sm font-medium text-gray-600">Full Name:</label>
-            <p class="text-lg text-gray-800 font-semibold"><?php echo $full_name; ?></p>
+        <!-- About Section -->
+        <div class="bg-gray-200 rounded-lg py-6 px-8 mt-8 shadow-md text-lg text-gray-900">
+            <p class="mb-4">
+                Discover the vibrant flavors and culinary traditions of Ilocos with our website dedicated to showcasing the unique and delectable dishes of the region.
+                Whether you're a seasoned cook or just beginning your culinary journey, you'll find authentic recipes and inspiring ideas to bring the tastes of Ilocano cuisine into your own kitchen.
+                Join us in celebrating the rich heritage of Ilocos and elevate your cooking with these incredible, flavorful dishes!
+            </p>
         </div>
-        <div class="flex items-center">
-            <label class="w-40 text-sm font-medium text-gray-600">Email:</label>
-            <p class="text-lg text-gray-800 font-semibold"><?php echo $email; ?></p>
-        </div>
-        <div class="flex items-center">
-            <label class="w-40 text-sm font-medium text-gray-600">Contact No.</label>
-            <p class="text-lg text-gray-800 font-semibold"><?php echo $contact; ?></p>
+
+        <!-- Logout Button -->
+        <a href="/Flavors of Ilocos/logout.php" class="bg-red-500 text-white font-semibold py-3 px-8 mt-6 rounded-lg shadow-md hover:bg-red-600 transition duration-300">
+            Logout
+        </a>
+    </div>
+</section>
+
+<!-- User Account Information Section -->
+<section class="bg-gray-50 py-8">
+    <div class="max-w-screen-lg mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">User Account Information</h2>
+        
+        <!-- Account Information Card -->
+        <div class="bg-white shadow-lg rounded-lg p-6 space-y-6">
+            <!-- Full Name -->
+            <div class="flex items-center justify-between">
+                <label class="w-40 text-sm font-medium text-gray-700">Full Name:</label>
+                <p class="text-lg text-gray-800 font-semibold"><?php echo $full_name; ?></p>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-center justify-between">
+                <label class="w-40 text-sm font-medium text-gray-700">Email:</label>
+                <p class="text-lg text-gray-800 font-semibold"><?php echo $email; ?></p>
+            </div>
+
+            <!-- Contact No -->
+            <div class="flex items-center justify-between">
+                <label class="w-40 text-sm font-medium text-gray-700">Contact No.:</label>
+                <p class="text-lg text-gray-800 font-semibold"><?php echo $contact; ?></p>
+            </div>
         </div>
     </div>
 </section>
 
-
-
-<br><br>
 <?php include 'footer.php'; ?>
+
+</body>
 </body>
 </html>
 
