@@ -68,7 +68,7 @@ if ($uploadOk == 0) {
     } else {
         echo "<script>
         alert('Failed'); 
-     window.location.href = ''http://localhost/Flavors of Ilocos/admin/recipes_admin.php#food';
+    window.location.href = 'http://localhost/Flavors of Ilocos/admin/recipes_admin.php#food';
         </script>";
     }
 }
