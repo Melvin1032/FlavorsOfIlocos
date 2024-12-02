@@ -10,7 +10,7 @@ $recipeProcedure = $_POST['recipe_procedure'];
 $recipeImageName = $_FILES['recipe_image']['name'];
 $recipeImageTmpName = $_FILES['recipe_image']['tmp_name'];
 
-$target_dir = "../uploads/";
+$target_dir = "C:/xampp/htdocs/Flavors of Ilocos/uploads/";
 $target_file = $target_dir . basename($recipeImageName);
 $uploadOk = 1;
 $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
@@ -45,7 +45,7 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 if ($uploadOk == 0) {
     echo "<script>
     alert('There\'s a problem with your image, try another image'); 
-    window.location.href = 'http://localhost/Flavors of Ilocos/recipes_admin.php#food';
+    window.location.href = 'http://localhost/Flavors of Ilocos/admin/recipes_admin.php#food';
     </script>";
 } else {
     if (move_uploaded_file($recipeImageTmpName, $target_file)) {
@@ -62,13 +62,13 @@ if ($uploadOk == 0) {
 
         echo "<script>
         alert('Sucessfully Added'); 
-    window.location.href = 'http://localhost/Flavors of Ilocos/recipes_admin.php#food';
+    window.location.href = 'http://localhost/Flavors of Ilocos/admin/recipes_admin.php#food';
         </script>";
 
     } else {
         echo "<script>
         alert('Failed'); 
-     window.location.href = 'http://localhost/Flavors of Ilocos/recipes_admin.php#food';
+     window.location.href = ''http://localhost/Flavors of Ilocos/admin/recipes_admin.php#food';
         </script>";
     }
 }
