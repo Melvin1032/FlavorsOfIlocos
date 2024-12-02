@@ -3,7 +3,7 @@
 $servername = 'localhost';
 $username = 'root';
 $password = '';
-$db = 'food_recipe_db';
+$db = 'flavors_of_ilocos';
 
 try {
     $conn =  new PDO("mysql:host=$servername;dbname=$db", $username, $password);
