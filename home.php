@@ -66,17 +66,14 @@ if(!isset($_SESSION['user_name'])){
     <div class="post">
       <h3>Discovering the Secrets of Bagnet</h3>
       <p>Explore the crispy and flavorful world of Bagnet, a signature Ilocano dish. Learn the history and techniques to prepare this culinary masterpiece.</p>
-      <a href="#">Read More</a>
     </div>
     <div class="post">
       <h3>The Art of Making Empanada</h3>
       <p>Dive into the vibrant streets of Ilocos and discover the joy of making the famous orange-hued Ilocos Empanada. Perfectly crispy and deeply satisfying!</p>
-      <a href="#">Read More</a>
     </div>
     <div class="post">
       <h3>Paksiw na Bangus: A Taste of Comfort</h3>
       <p>Unravel the tangy, savory flavors of Paksiw na Bangus, a dish that feels like home. See why it's a staple on Ilocano dining tables.</p>
-      <a href="#">Read More</a>
     </div>
   </div>
 </div>
