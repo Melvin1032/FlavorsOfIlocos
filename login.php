@@ -45,6 +45,7 @@ if(isset($_POST['submit'])){
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>LOGIN | Flavors of Ilocos</title>
+   <link rel="icon" href="logo/Logo1.png">
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="css/styles.css">
@@ -66,7 +67,7 @@ if(isset($_POST['submit'])){
 
 <div class="login-container">
     <h1>Hey there!</h1>
-    <p>Log in to explore the authentic flavors of Ilocos!</p>
+    <p>Log in to explore the authentic Flavors of Ilocos!</p>
 
     <?php
 if (isset($error)) {

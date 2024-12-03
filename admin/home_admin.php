@@ -18,6 +18,7 @@ if (!isset($_SESSION['admin_name'])) {
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>HOME | Flavors of Ilocos</title>
+   <link rel="icon" href="/Flavors of Ilocos/logo/Logo1.png">
 
    <!-- custom css file link  -->
    <link rel="stylesheet" href="/Flavors of Ilocos/css/styles.css">
@@ -54,32 +55,30 @@ if (!isset($_SESSION['admin_name'])) {
 
 <br><br>
 
-<div class="about-section">
-  <h2>About Us</h2>
-  <p>
-    Flavors of Ilocos is more than just a recipe platform. It's a celebration of Ilocano culture and heritage. We aim to preserve and promote traditional Ilocano cooking methods while making them accessible to everyone. Join us in savoring the true essence of Ilocos through its culinary wonders.
-  </p>
-</div>
 
-<div class="blog-section">
-  <div class="blog-posts">
-    <div class="post">
-      <h3>Discovering the Secrets of Bagnet</h3>
-      <p>Explore the crispy and flavorful world of Bagnet, a signature Ilocano dish. Learn the history and techniques to prepare this culinary masterpiece.</p>
-      <a href="#">Read More</a>
-    </div>
-    <div class="post">
-      <h3>The Art of Making Empanada</h3>
-      <p>Dive into the vibrant streets of Ilocos and discover the joy of making the famous orange-hued Ilocos Empanada. Perfectly crispy and deeply satisfying!</p>
-      <a href="#">Read More</a>
-    </div>
-    <div class="post">
-      <h3>Paksiw na Bangus: A Taste of Comfort</h3>
-      <p>Unravel the tangy, savory flavors of Paksiw na Bangus, a dish that feels like home. See why it's a staple on Ilocano dining tables.</p>
-      <a href="#">Read More</a>
-    </div>
+
+<section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20"></div>
+  <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+  <div class="mx-auto max-w-2xl lg:max-w-4xl">
+    <img class="mx-auto h-28" src="logo/logo4.png" alt="">
+    <figure class="mt-10">
+      <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+      <p>“The recipes shared on this site are fantastic! I love how the dishes looks and how easy it is to follow the instructions. It's a great way to learn about Ilocano cuisine, and I can't wait to try more recipes!”</p>
+      </blockquote>
+      <figcaption class="mt-10">
+        <img class="mx-auto size-20 rounded-full" src="images/melvin.png" alt="">
+        <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+          <div class="font-semibold text-gray-900">John Melvin Macabeo  </div>
+          <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+            <circle cx="1" cy="1" r="1" />
+          </svg>
+          <div class="text-gray-600">CEO of MLVZ.psd</div>
+        </div>
+      </figcaption>
+    </figure>
   </div>
-</div>
+</section>
 
 <br><br>
 
